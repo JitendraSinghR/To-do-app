@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Note</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <!-- below is title given todolist and a image  -->
+        <h2>To Do List <img src="/images.jpg" alt="img" /></h2>
+        <!-- below is the task bar and add button -->
+        <div class="taskbar">
+          <input type="text" id="input-box" placeholder="Type your text here" />
+          <button onclick="addTask()">ADD</button>
+        </div>
+
+        <ul id="list-container">
+          <!-- <li class="checked">Hello</li>
+          <li>namestey</li>
+          <li>hi</li>
+          <li>how are you</li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

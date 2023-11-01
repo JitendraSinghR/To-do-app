@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  background: linear-gradient(135deg, rgb(181, 241, 40), rgb(246, 122, 46));
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  padding: 40px;
+}
+.box {
+  max-width: 540px;
+  width: 100%;
+  background: #fff;
+  height: auto;
+  min-height: 60vh;
+  padding: 40px 30px;
+  margin: 100px auto 20px;
+  border-radius: 40px;
+}
+.box h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.7rem;
+  color: #e21f1f;
+}
+.box img {
+  width: 55px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.taskbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.taskbar input {
+  width: 100%;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  /* border: transparent; */
+}
+.taskbar button {
+  font-size: 1.3rem;
+  border-radius: 10px;
+  width: 80px;
+  background-color: rgb(246, 86, 6);
+  color: aliceblue;
+  cursor: pointer;
+  padding: 6px;
+  border: transparent;
+}
+
+ul li {
+  list-style: none;
+  padding: 15px 8px 12px 50px;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  margin-top: 10px;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(/todolist/unchecked.png);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  text-decoration: line-through;
+  color: rgb(130, 2, 250);
+}
+ul li.checked::before {
+  background-image: url(/todolist/checked.jpg);
+}
+ul li span {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 4px rgb(202, 24, 24);
+  width: 30px;
+  text-align: center;
+}
