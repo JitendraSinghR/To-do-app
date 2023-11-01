@@ -98,3 +98,107 @@ ul li span {
   width: 30px;
   text-align: center;
 }
+
+/* adding media queries */
+@media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .container {
+    background: linear-gradient(135deg, rgb(181, 241, 40), rgb(246, 122, 46));
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    padding: 20px; 
+  }
+
+  .box {
+    max-width: 100%; 
+    width: 100%;
+    background: #fff;
+    height: auto;
+    min-height: auto;
+    padding: 20px; 
+    margin: 50px auto 20px; 
+    border-radius: 20px;
+  }
+
+  .box h2 {
+    font-size: 2rem; 
+    text-align: center; 
+    color: #e21f1f;
+  }
+
+  .box img {
+    width: 40px; 
+    margin: 10px 0; 
+    border-radius: 5px;
+  }
+
+  .taskbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .taskbar input {
+    width: 100%;
+    font-size: 1.2rem; 
+    border-radius: 10px;
+    padding: 10px; 
+  }
+
+  .taskbar button {
+    font-size: 1.2rem; 
+    width: 100%; 
+    margin-top: 10px;
+  }
+
+  ul li {
+    list-style: none;
+    padding: 15px 8px 12px 20px; 
+    font-size: 1.2rem; 
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    margin-top: 10px;
+  }
+
+  ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px; 
+    width: 20px; 
+    background-image: url(assets/unchecked.png); 
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0;
+  }
+
+  ul li.checked {
+    text-decoration: line-through;
+    color: rgb(130, 2, 250);
+  }
+
+  ul li.checked::before {
+    background-image: url(assets/checked.jpg); 
+  }
+
+  ul li span {
+    position: absolute;
+    right: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 4px rgb(202, 24, 24);
+    width: 30px;
+    text-align: center;
+  }
+}
+
