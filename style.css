@@ -74,7 +74,7 @@ ul li::before {
   position: absolute;
   height: 28px;
   width: 28px;
-  background-image: url(/todolist/unchecked.png);
+  background-image: url(assests/unchecked.png);
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -86,7 +86,7 @@ ul li.checked {
   color: rgb(130, 2, 250);
 }
 ul li.checked::before {
-  background-image: url(/todolist/checked.jpg);
+  background-image: url(assests/checked.jpg);
 }
 ul li span {
   position: absolute;
